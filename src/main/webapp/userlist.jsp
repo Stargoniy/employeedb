@@ -7,11 +7,12 @@
 <body>
 <h1>OK!</h1>
 <c:forEach var="employee" items="${employees}">
-    <h3 style="color: #6005ff"><c:out value="${employee.email}" /><a href="employeeform?id=<c:out value="${employee.id}" />" /> edit</a></h3>
-    <h4>Name: <c:out value="${employee.firstName}" /></h4>
-    <h4>SurName: <c:out value="${employee.lastName}" /></h4>
-    <h4>Password: <c:out value="${employee.password}" /></h4>
-    <h4>Birth date: <c:out value="${employee.birhdate}" /></h4>
+        <h3 style="color: #6005ff"><c:out value="${employee.email}" /><a href="employeeform?id=<c:out value="${employee.id}" />"> edit</a></h3>
+        <h4>Name: <c:out value="${employee.firstName}" /></h4>
+        <h4>SurName: <c:out value="${employee.lastName}" /></h4>
+        <h4>Password: <c:out value="${employee.password}" /></h4>
+        <h4>Birth date: <c:out value="${employee.birhdate}" /></h4>
+        <h4>ID: <c:out value="${employee.id}" /></h4>
 </c:forEach>
 
 </body>

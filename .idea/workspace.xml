@@ -4,6 +4,8 @@
     <list default="true" id="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/in6k/employeedb/dao/EmployeeDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/in6k/employeedb/dao/EmployeeDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/in6k/employeedb/servlet/EmployeeFormServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/in6k/employeedb/servlet/EmployeeFormServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/employeeform.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/employeeform.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/userlist.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/userlist.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="employeedb.iws" />
@@ -16,18 +18,18 @@
     <file path="/hibernate.cfg.xml" changelist="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" time="1360058153939" ignored="false" />
     <file path="/Employee.hbm.xml" changelist="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" time="1360055156353" ignored="false" />
     <file path="/a.sql" changelist="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" time="1360055832705" ignored="false" />
-    <file path="/EmployeeDao.java" changelist="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" time="1360069483743" ignored="false" />
+    <file path="/EmployeeDao.java" changelist="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" time="1360072696832" ignored="false" />
     <file path="/HibernateUtil.java" changelist="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" time="1360057329427" ignored="false" />
-    <file path="/EmployeeFormServlet.java" changelist="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" time="1360070014146" ignored="false" />
+    <file path="/EmployeeFormServlet.java" changelist="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" time="1360072955673" ignored="false" />
     <file path="$PROJECT_DIR$/../employee/src/main/java/com/in6k/employees/servlet/EmployeeFormServlet.java" changelist="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" time="1360058953404" ignored="false" />
-    <file path="/fragment.java" changelist="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" time="1360068694975" ignored="false" />
+    <file path="/fragment.java" changelist="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" time="1360073164904" ignored="false" />
     <file path="/index.jsp" changelist="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" time="1360065652870" ignored="false" />
     <file path="/Dummy.txt" changelist="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" time="1360065744619" ignored="false" />
     <file path="/EmployeeForm.java" changelist="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" time="1360066067857" ignored="false" />
     <file path="/web.xml" changelist="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" time="1360066522069" ignored="false" />
     <file path="/UserListServlet.java" changelist="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" time="1360067884184" ignored="false" />
-    <file path="/userlist.jsp" changelist="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" time="1360067996097" ignored="false" />
-    <file path="/employeeform.jsp" changelist="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" time="1360070094002" ignored="false" />
+    <file path="/userlist.jsp" changelist="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" time="1360074100994" ignored="false" />
+    <file path="/employeeform.jsp" changelist="ba5b52e2-1fe4-42fb-a5e1-7e23239162a6" time="1360073544148" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,13 +93,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EmployeeFormServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/employeedb/servlet/EmployeeFormServlet.java">
+      <file leaf-file-name="userlist.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/userlist.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="24" selection-start="2079" selection-end="2079" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="9" column="128" selection-start="365" selection-end="365" vertical-scroll-proportion="-5.625">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,10 +105,27 @@
       <file leaf-file-name="employeeform.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/employeeform.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="21" selection-start="938" selection-end="938" vertical-scroll-proportion="0.28947368">
+            <state line="57" column="22" selection-start="2309" selection-end="2309" vertical-scroll-proportion="0.77310926">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserListServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/employeedb/servlet/UserListServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployeeFormServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/employeedb/servlet/EmployeeFormServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="56" selection-start="1177" selection-end="1217" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="tag#&lt;unnamed&gt;#0;tag#jsp:root#0" expanded="false" />
-                <element signature="e#338#354#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,10 +161,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/in6k/employeedb/form/EmployeeForm.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/in6k/employeedb/servlet/UserListServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/userlist.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/in6k/employeedb/dao/EmployeeDao.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/employeeform.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/in6k/employeedb/servlet/EmployeeFormServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/employeeform.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/userlist.jsp" />
       </list>
     </option>
   </component>
@@ -498,7 +515,7 @@
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="Database.TableEditor.Splitter" value="0.9" />
+    <property name="Database.TableEditor.Splitter" value="0.8999999" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -789,7 +806,7 @@
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17396122" sideWeight="0.670247" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17396122" sideWeight="0.69709986" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957035" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -801,11 +818,11 @@
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13518006" sideWeight="0.670247" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18116343" sideWeight="0.7593985" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2498615" sideWeight="0.670247" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32975295" sideWeight="0.49584487" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2" sideWeight="0.69709986" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3029001" sideWeight="0.49584487" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -931,16 +948,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/9b701fca/5fa6c110-c758-47ae-8674-f4fd02c9a8cf/acme..employees">
-      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="50" selection-start="1056" selection-end="1056" vertical-scroll-proportion="0.63131315">
@@ -971,16 +978,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/employeedb/dao/EmployeeDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="513" selection-end="513" vertical-scroll-proportion="0.37878788">
+        <state line="35" column="35" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/userlist.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="188" selection-end="188" vertical-scroll-proportion="-4.375">
+    <entry file="dbDummy://dbtable:/9b701fca/5fa6c110-c758-47ae-8674-f4fd02c9a8cf/acme..employees">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.DatabaseTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
@@ -994,20 +1004,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/in6k/employeedb/servlet/EmployeeFormServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="24" selection-start="2079" selection-end="2079" vertical-scroll-proportion="0.0">
+        <state line="26" column="56" selection-start="1177" selection-end="1217" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/userlist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="128" selection-start="365" selection-end="365" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/employeeform.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="21" selection-start="938" selection-end="938" vertical-scroll-proportion="0.28947368">
-          <folding>
-            <element signature="tag#&lt;unnamed&gt;#0;tag#jsp:root#0" expanded="false" />
-            <element signature="e#338#354#0" expanded="true" />
-          </folding>
+        <state line="57" column="22" selection-start="2309" selection-end="2309" vertical-scroll-proportion="0.77310926">
+          <folding />
         </state>
       </provider>
     </entry>

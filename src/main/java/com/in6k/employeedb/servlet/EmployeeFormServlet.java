@@ -9,8 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Set;
 
 public class EmployeeFormServlet extends HttpServlet {
@@ -26,6 +24,7 @@ public class EmployeeFormServlet extends HttpServlet {
             employeeForm.setPassword(employee.getPassword());
             employeeForm.setPasswordConfirmation(employee.getPassword());
             employeeForm.setBirhdate(employee.getBirhdate());
+//            req.setAttribute("employee", employee);
             req.setAttribute("employeeform", employeeForm);
         }
         req.getRequestDispatcher("/employeeform.jsp").include(req, resp);
@@ -55,6 +54,12 @@ public class EmployeeFormServlet extends HttpServlet {
             employee.setEmail(employeeForm.getEmail());
             employee.setPassword(employeeForm.getPassword());
             employee.setBirhdate(employeeForm.getBirhdate());
+
+//            if (req.getAttribute("employee") != null) {
+//                EmployeeDao.update((Employee) req.getAttribute("employee"));
+//            } else {
+//                EmployeeDao.save(employee);
+//            }
             EmployeeDao.save(employee);
             resp.sendRedirect("/userlist");
         }

@@ -29,4 +29,12 @@ public class EmployeeDao {
         session.close();
         return result;
     }
+
+    public static void update(Employee employee) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction transaction = session.beginTransaction();
+        session.update(employee);
+        transaction.commit();
+        session.close();
+    }
 }

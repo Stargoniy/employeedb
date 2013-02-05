@@ -27,11 +27,15 @@
         }
     %>
 
+    <c:forEach var="error" items="${errors}">
+        <h4 style="color: #ff6e50"><c:out value="${error} is not valid." /></h4>
+    </c:forEach>
+
     <p style="color: <%=colors.get("firstName")%>"><b>First name:</b><br>
         <input name="firstName" type="text" size="40" value="<c:out value="${employeeform.firstName}" default=""/>">
     </p>
 
-    <p style="color: <%=colors.get("lastName")%>"><b>Surname:</b><br>
+    <p style="color: <%=colors.get("lastName")%>"><b>Last Name:</b><br>
         <input name="lastName" type="text" size="40" value="<c:out value="${employeeform.lastName}" default=""/>">
     </p>
 
