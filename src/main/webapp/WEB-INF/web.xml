@@ -4,4 +4,23 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+        <servlet-name>employeeform</servlet-name>
+        <servlet-class>com.in6k.employeedb.servlet.EmployeeFormServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>userlist</servlet-name>
+        <servlet-class>com.in6k.employeedb.servlet.UserListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>employeeform</servlet-name>
+        <url-pattern>/employeeform</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>userlist</servlet-name>
+        <url-pattern>/userlist</url-pattern>
+    </servlet-mapping>
 </web-app>
