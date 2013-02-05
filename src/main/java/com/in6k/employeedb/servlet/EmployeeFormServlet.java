@@ -20,14 +20,14 @@ public class EmployeeFormServlet extends HttpServlet {
 //            em.load(new File(Config.getUsersDir() + req.getParameter("email") + ".xml"));
 //            req.setAttribute("employee", em);
         }
-        EmployeeForm employeeForm = new EmployeeForm();
-        employeeForm.setFirstName(setFieldParam(req, "name"));
-        employeeForm.setLastName(setFieldParam(req, "surname"));
-        employeeForm.setEmail(setFieldParam(req, "email"));
-        employeeForm.setPassword(setFieldParam(req, "password"));
-        employeeForm.setPasswordConfirmation(setFieldParam(req, "passwordConfirmation"));
-        employeeForm.setBirhdate(setFieldParam(req, "birhdate"));
-        req.setAttribute("employeeform", employeeForm);
+//        EmployeeForm employeeForm = new EmployeeForm();
+//        employeeForm.setFirstName(setFieldParam(req, "name"));
+//        employeeForm.setLastName(setFieldParam(req, "surname"));
+//        employeeForm.setEmail(setFieldParam(req, "email"));
+//        employeeForm.setPassword(setFieldParam(req, "password"));
+//        employeeForm.setPasswordConfirmation(setFieldParam(req, "passwordConfirmation"));
+//        employeeForm.setBirhdate(setFieldParam(req, "birhdate"));
+//        req.setAttribute("employeeform", employeeForm);
 
         req.getRequestDispatcher("/employeeform.jsp").include(req, resp);
     }
@@ -46,13 +46,7 @@ public class EmployeeFormServlet extends HttpServlet {
         boolean HAS_ERROR = !errors.isEmpty();
 
         if (HAS_ERROR) {
-//            employeeForm.setName(setFieldParam(req, "name"));
-//            employeeForm.setSurname(setFieldParam(req, "surname"));
-//            employeeForm.setEmail(setFieldParam(req, "email"));
-//            employeeForm.setPassword(setFieldParam(req, "password"));
-//            employeeForm.setPasswordConfirmation(setFieldParam(req, "passwordConfirmation"));
-//            employeeForm.setBirhdate(setFieldParam(req, "birhdate"));
-//            req.setAttribute("employeeform", employeeForm);
+            req.setAttribute("employeeform", employeeForm);
 
             req.setAttribute("errors", errors);
             req.getRequestDispatcher("/employeeform.jsp").include(req, resp);
@@ -64,31 +58,7 @@ public class EmployeeFormServlet extends HttpServlet {
             employee.setPassword(employeeForm.getPassword());
             employee.setBirhdate(employeeForm.getBirhdate());
             EmployeeDao.save(employee);
-//            EmployeeModel em = new EmployeeModel(employeeForm, ProviderFactory.ProviderType.DB);
-//            em.save();
             resp.sendRedirect("/userlist");
         }
-    }
-
-    private String setFieldParam(HttpServletRequest request, String value) {
-        String result = "";
-//        EmployeeModel employee;
-//        if (request.getAttribute("employee") != null) {
-//            employee = (EmployeeModel)request.getAttribute("employee");
-//            if (value.equals("name")) {
-//                result = employee.getName();
-//            } else if (value.equals("surname")) {
-//                result = employee.getSurname();
-//            } else if (value.equals("email")) {
-//                result = employee.getEmail();
-//            } else if (value.equals("password") || value.equals("passwordConfirmation")) {
-//                result = employee.getPassword();
-//            } else if (value.equals("birhdate")) {
-//                result = employee.getBirhdate();
-//            }
-//        } else if (request.getParameter(value) != null) {
-//            result = request.getParameter(value);
-//        }
-        return result;
     }
 }
