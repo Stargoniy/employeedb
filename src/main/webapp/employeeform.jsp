@@ -55,6 +55,8 @@
         <input name="birhdate" type="text" size="40" value="<c:out value="${employeeform.birhdate}" default=""/>">
     </p>
 
+    <input name="id" type="hidden" value="<c:out value="${employeeform.id}" default="-1"/>">
+
     <p><input type="submit" value="Save">
 </form>
 </body>

@@ -11,7 +11,7 @@ public class EmployeeDao {
     public static void save(Employee employee) {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
-        session.save(employee);
+        session.saveOrUpdate(employee);
         transaction.commit();
         session.close();
     }

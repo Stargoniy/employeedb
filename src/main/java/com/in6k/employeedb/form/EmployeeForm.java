@@ -11,6 +11,7 @@ public class EmployeeForm {
     private static final String VALID_CONFPASS_REGEXP = "[a-zA-Zа-яА-Я0-9]{1,}";
     private static final String VALID_BIRTHDATE_REGEXP = "^[0-9]+-[0-9]+-[0-9]+$";
 
+    protected int id;
     protected String firstName;
     protected String lastName;
     protected String email;
@@ -47,6 +48,14 @@ public class EmployeeForm {
             return false;
         }
         return value.matches(pattern);
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getFirstName() {

@@ -18,13 +18,13 @@ public class EmployeeFormServlet extends HttpServlet {
         if (req.getParameter("id") != null) {
             Employee employee = EmployeeDao.findEmployeeById(new Integer(req.getParameter("id")));
             EmployeeForm employeeForm = new EmployeeForm();
+            employeeForm.setId(employee.getId());
             employeeForm.setFirstName(employee.getFirstName());
             employeeForm.setLastName(employee.getLastName());
             employeeForm.setEmail(employee.getEmail());
             employeeForm.setPassword(employee.getPassword());
             employeeForm.setPasswordConfirmation(employee.getPassword());
             employeeForm.setBirhdate(employee.getBirhdate());
-//            req.setAttribute("employee", employee);
             req.setAttribute("employeeform", employeeForm);
         }
         req.getRequestDispatcher("/employeeform.jsp").include(req, resp);
@@ -32,7 +32,15 @@ public class EmployeeFormServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        Integer id = new Integer(req.getParameter("id"));
+        Employee employee;
+        if (id != -1) {
+            employee = EmployeeDao.findEmployeeById(id);
+        } else {
+            employee = new Employee();
+        }
         EmployeeForm employeeForm = new EmployeeForm();
+        employeeForm.setId(id);
         employeeForm.setFirstName(req.getParameter("firstName"));
         employeeForm.setLastName(req.getParameter("lastName"));
         employeeForm.setEmail(req.getParameter("email"));
@@ -48,18 +56,11 @@ public class EmployeeFormServlet extends HttpServlet {
             req.setAttribute("errors", errors);
             req.getRequestDispatcher("/employeeform.jsp").include(req, resp);
         } else {
-            Employee employee = new Employee();
             employee.setFirstName(employeeForm.getFirstName());
             employee.setLastName(employeeForm.getLastName());
             employee.setEmail(employeeForm.getEmail());
             employee.setPassword(employeeForm.getPassword());
             employee.setBirhdate(employeeForm.getBirhdate());
-
-//            if (req.getAttribute("employee") != null) {
-//                EmployeeDao.update((Employee) req.getAttribute("employee"));
-//            } else {
-//                EmployeeDao.save(employee);
-//            }
             EmployeeDao.save(employee);
             resp.sendRedirect("/userlist");
         }
