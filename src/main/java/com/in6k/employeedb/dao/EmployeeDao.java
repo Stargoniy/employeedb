@@ -22,4 +22,12 @@ public class EmployeeDao {
         session.close();
         return result;
     }
+
+    public static Employee findEmployeeById(int id) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Employee result = (Employee) session.get(Employee.class, id);
+//        session.
+        session.close();
+        return result;
+    }
 }

@@ -16,19 +16,16 @@ public class EmployeeFormServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         if (req.getParameter("id") != null) {
-//            EmployeeModel em = new EmployeeModel(ProviderFactory.ProviderType.XML);
-//            em.load(new File(Config.getUsersDir() + req.getParameter("email") + ".xml"));
-//            req.setAttribute("employee", em);
+            Employee employee = EmployeeDao.findEmployeeById(new Integer(req.getParameter("id")));
+            EmployeeForm employeeForm = new EmployeeForm();
+            employeeForm.setFirstName(employee.getFirstName());
+            employeeForm.setLastName(employee.getLastName());
+            employeeForm.setEmail(employee.getEmail());
+            employeeForm.setPassword(employee.getPassword());
+            employeeForm.setPasswordConfirmation(employee.getPassword());
+            employeeForm.setBirhdate(employee.getBirhdate());
+            req.setAttribute("employeeform", employeeForm);
         }
-//        EmployeeForm employeeForm = new EmployeeForm();
-//        employeeForm.setFirstName(setFieldParam(req, "name"));
-//        employeeForm.setLastName(setFieldParam(req, "surname"));
-//        employeeForm.setEmail(setFieldParam(req, "email"));
-//        employeeForm.setPassword(setFieldParam(req, "password"));
-//        employeeForm.setPasswordConfirmation(setFieldParam(req, "passwordConfirmation"));
-//        employeeForm.setBirhdate(setFieldParam(req, "birhdate"));
-//        req.setAttribute("employeeform", employeeForm);
-
         req.getRequestDispatcher("/employeeform.jsp").include(req, resp);
     }
 
