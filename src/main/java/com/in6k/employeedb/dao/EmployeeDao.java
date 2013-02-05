@@ -7,7 +7,6 @@ import org.hibernate.Transaction;
 
 public class EmployeeDao {
     public static void save(Employee employee) {
-//        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
         session.save(employee);
